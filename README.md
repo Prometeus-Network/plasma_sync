@@ -14,7 +14,7 @@ and the mainnet of Ethereum blockchain.
 
 ## How it works
 
-All the transactions made within our Plasma in last 24 hours, being synchronized once a day with Ethereum mainnet. 
+All the transactions made within our Plasma in last 60 minutes, being synchronized once an hour with Ethereum mainnet. 
 That allows us to save all transactions and display data about them without waiting for confirmation of the Ethereum network.  
 All the transactions received after synchronization will be collected in one transaction, thereby saving gas. 
 
