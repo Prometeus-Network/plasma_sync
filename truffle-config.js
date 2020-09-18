@@ -1,11 +1,13 @@
+const Web3 = require('web3');
+var net = require('net');
+
 module.exports = {
 
   networks: {
-    development: {
-     host: "127.0.0.1",     // Localhost (default: none)
-     port: 8545,            // Standard Ethereum port (default: none)
-     network_id: "5555",       // Any network (default: none)
-    },
+    stoa: {
+      provider: () => new Web3.providers.HttpProvider("http://178.128.242.183:8545"),
+      network_id: "*",
+    }
   },
 
   mocha: {
@@ -13,7 +15,5 @@ module.exports = {
   contracts_directory: './contracts/',
   contracts_build_directory: './builds/',
   compilers: {
-    solc: {
-    }
   }
 }
